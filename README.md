@@ -51,7 +51,7 @@ Although currently focused on a single retailer, the architecture is designed to
 ---
 
 ## Results & Insights
-- Successfully automated daily price collection from KaBuM!, eliminating ~5 minutes of manual work per day.
+- Successfully automated daily price collection from KaBuM!, eliminating ~10 minutes of manual work per day.
 - Built historical database enabling price trend analysis and identification of optimal purchase timing.
 - Achieved reliable execution through proper automation configuration and error recovery.
 - Created scalable database foundation supporting multiple products.
@@ -59,7 +59,7 @@ Although currently focused on a single retailer, the architecture is designed to
 ---
 
 ## Tools & Skills Demonstrated
-- **Web Scraping:** requests, BeautifulSoup, regex pattern matching, anti-bot bypass techniques
+- **Web Scraping:** requests, regex pattern matching, anti-bot bypass techniques
 - **Database Management:** SQLite, schema design, normalization, foreign keys, parameterized queries
 - **Automation:** Windows Task Scheduler, logging, error handling, scheduled execution
 - **Data Security:** SQL injection prevention, proper error handling, input validation
