@@ -1,12 +1,14 @@
 # Automated E-Commerce Price Tracker
 An independent project designed to automate daily price monitoring of products from the KaBuM! e-commerce website. Built using Python, SQLite, and Windows Task Scheduler to eliminate manual price checking and enable data-driven purchasing decisions.
 
+_Se preferir a versão em Português deste projeto, [clique aqui](https://github.com/luanfaraujo/price-tracker-ptbr)._
+
 ---
 
 ## Overview
 This project demonstrates how web scraping and database automation can solve real-world problems. The system automatically collects product pricing data daily from KaBuM! (a Brazilian e-commerce site), stores it in a normalized SQLite database, and maintains historical records for trend analysis.
 
-Although currently focused on a single retailer, the architecture is designed to be extensible to additional sites. The core techniques - web scraping, database design, and automation—apply broadly to competitive intelligence, market research, and price monitoring scenarios across industries.
+Although currently focused on a single retailer, the architecture is designed to be extensible to additional sites. The core techniques - web scraping, database design, and automation - apply broadly to competitive intelligence, market research, and price monitoring scenarios across industries.
 
 ---
 
