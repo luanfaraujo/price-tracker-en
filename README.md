@@ -96,5 +96,3 @@ Although currently focused on a single retailer, the architecture is designed to
 - Database normalization principles and their practical benefits
 - Parameterized queries vs. string interpolation for SQL
 - Automation reliability and handling missed executions
-
----
