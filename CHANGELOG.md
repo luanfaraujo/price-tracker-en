@@ -2,4 +2,4 @@
 - If product does not have a discount, "orig_price" will be the same as "installments_price" instead of 0.0.
 
 *2025-10-05 - 1.0*
-- Initial update on GitHub
+- Initial upload on GitHub.
