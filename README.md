@@ -1,19 +1,19 @@
 # Automated E-Commerce Price Tracker
-An independent project designed to automate daily price monitoring of products from the KaBuM! e-commerce website. Built using Python, SQLite, and Windows Task Scheduler to eliminate manual price checking and enable data-driven purchasing decisions.
+An independent project designed to automate daily price monitoring of products from the following e-commerce websites: KaBuM!, Mercado Livre. Built using Python, SQLite, and Windows Task Scheduler to eliminate manual price checking and enable data-driven purchasing decisions.
 
 _Se preferir a versão em Português deste projeto, [clique aqui](https://github.com/luanfaraujo/price-tracker-ptbr)._
 
 ---
 
 ## Overview
-This project demonstrates how web scraping and database automation can solve real-world problems. The system automatically collects product pricing data daily from KaBuM! (a Brazilian e-commerce site), stores it in a normalized SQLite database, and maintains historical records for trend analysis.
+This project demonstrates how web scraping and database automation can solve real-world problems. The system automatically collects product pricing data daily from the following e-commerce websites: KaBuM!, Mercado Livre, stores it in a normalized SQLite database, and maintains historical records for trend analysis.
 
-Although currently focused on a single retailer, the architecture is designed to be extensible to additional sites. The core techniques - web scraping, database design, and automation - apply broadly to competitive intelligence, market research, and price monitoring scenarios across industries.
+Currently supports KaBuM! and Mercado Livre, with architecture designed to be extensible to additional retailers. The core techniques - web scraping, database design, and automation - apply broadly to competitive intelligence, market research, and price monitoring scenarios across industries.
 
 ---
 
 ## Objectives
-- Automate daily collection of product prices from KaBuM! e-commerce website.
+- Automate daily collection of product prices from e-commerce websites.
 - Store historical pricing data in a structured, queryable database.
 - Bypass anti-bot detection systems using proper HTTP headers.
 - Enable automated execution without manual intervention.
@@ -25,9 +25,9 @@ Although currently focused on a single retailer, the architecture is designed to
 ## Process
 
 ### 1. Web Scraping Development
-- Analyzed KaBuM! website HTML structure to locate pricing data.
+- Analyzed website HTML structures (KaBuM! and Mercado Livre) to locate pricing data.
 - Implemented HTTP headers to mimic browser requests and bypass bot detection.
-- Used regular expressions to extract prices from JSON-embedded pricing data within HTML.
+- Used site-specific regular expressions to extract prices from JSON-embedded pricing data within HTML.
 - Built error handling for failed requests and missing data patterns.
 
 ### 2. Database Design
@@ -51,7 +51,7 @@ Although currently focused on a single retailer, the architecture is designed to
 ---
 
 ## Results & Insights
-- Successfully automated daily price collection from KaBuM!, eliminating ~10 minutes of manual work per day.
+- Successfully automated daily price collection from two major Brazilian e-commerce sites, eliminating ~15 minutes of manual work per day.
 - Built historical database enabling price trend analysis and identification of optimal purchase timing.
 - Achieved reliable execution through proper automation configuration and error recovery.
 - Created scalable database foundation supporting multiple products.
@@ -67,14 +67,25 @@ Although currently focused on a single retailer, the architecture is designed to
 
 ---
 
+## Supported Retailers
+- **KaBuM!**: Full price tracking (original, cash, installments)
+- **Mercado Livre**: Price tracking (cash and installments)
+
+Each retailer requires:
+- Custom regex patterns for price extraction
+- Site-specific HTTP headers
+- Unique URL structure handling
+
+---
+
 ## Current Limitations & Future Enhancements
 **Current Scope:**
-- Works specifically with KaBuM! website structure
-- Regex pattern tailored to KaBuM!'s JSON-embedded pricing format
-- Single-retailer implementation
+- Currently supports KaBuM! and Mercado Livre
+- Site-specific regex patterns required for each retailer
+- Different URL formats across retailers
 
 **Planned Improvements:**
-- Multi-retailer support with site-specific scraping adapters
+- Expand to additional retailers
 - Price drop email alerts when products reach target thresholds
 - Data visualization dashboard showing price trends over time
 - Cross-retailer comparison for the same product
