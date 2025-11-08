@@ -1,3 +1,6 @@
+*2025-11-08 - 1.2*
+- Rewritten code to use functions instead of a singular loop.
+
 *2025-10-30 - 1.1*
 - Added Mercado Livre price tracking.
 
